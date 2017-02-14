@@ -16,6 +16,9 @@ RUN useradd deploy -s /bin/bash -m -U &&\
 
 ADD huginn /var/www/huginn
 
+RUN export LC_ALL=en_US.UTF-8 &&\
+    export LANG=en_US.UTF-8
+
 RUN cd /var/www/huginn &&\
     cp .env.example .env &&\
     bundle install --deployment &&\
