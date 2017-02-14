@@ -1,5 +1,5 @@
 # NAME:     huginn/huginn
-FROM registry.cn-hangzhou.aliyuncs.com/bymax/rails_base:2.4.0
+FROM registry.cn-hangzhou.aliyuncs.com/bymax/rails_base:2.3.2
 
 ENV RAILS_ENV 'production'
 ENV HUGINN_VERSION '1.0.1'
